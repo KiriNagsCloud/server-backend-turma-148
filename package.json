@@ -1,14 +1,14 @@
 {
-  "name": "teste",
+  "name": "projeto",
   "version": "1.0.0",
-  "description": "qualquer uma",
-  "main": "index.js",
+  "description": "servidor de exemplo para turma 148",
+  "main": "index.ts",
   "scripts": {
-    "dev": "ts-node-dev ./src/index.js",
+    "dev": "ts-node-dev ./src/index.ts",
     "start": "node ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "jay",
+  "author": "Andre",
   "license": "ISC",
   "dependencies": {
     "@prisma/client": "^6.8.2",
@@ -24,6 +24,5 @@
     "prisma": "^6.8.2",
     "tsx": "^4.19.4",
     "typescript": "^5.8.3"
-  },
-  "keywords": []
+  }
 }

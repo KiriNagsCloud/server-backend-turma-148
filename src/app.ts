@@ -1,15 +1,23 @@
-import routes from "./routes.js";
-import cors from "cors";
-import express from 'express';
+import routes from "./routes"
+import cors from 'cors'
+import express from 'express'
 
-const app = express()
+//iniciar o express
+const app = express();
 
-app.use(express.json())
+//defini as regras do servidor
+// meio de comunicação é um json
+app.use(express.json());
 
-app.use(express.urlencoded({extended: true}))
+//definir como os dados serao interpretados
+app.use(express.urlencoded({extended: true}));
 
-app.use(cors())
+//definir o cors - middleware para aplicações node.js com express
+//que permite ou restringe requisicoes entre origens diferentes
+//ou seja requisicoes cross-origin
+app.use(cors());
 
+//definir as rotas
 app.use(routes)
 
 export default app;
